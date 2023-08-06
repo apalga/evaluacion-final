@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Esto coloca los elementos a la izquierda y a la derecha */
+}
+
+.logo img {
+  width: 40px;
+  /* Ajusta el tamaño del logo según tus necesidades */
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 40px;
+  /* Cambiamos margin-right a margin-left */
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+  /* Para el primer elemento, eliminamos el margen izquierdo */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Cambia el color de los enlaces al pasar el cursor */
+.nav-links a:hover {
+  color: #ccc;
+}
+
+.contenedor1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulocentral {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  width: auto;
+  height: 90px;
+}
+
+.centrar {
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to left, rgb(0, 37, 67), #050505);
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  width: 750px;
+}
+
+/* Estilos para las tarjetas y el contenedor de cursos */
+.cursos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.tarjeta {
+  width: 250px;
+  /* Ancho de las tarjetas */
+  height: 200px;
+  /* Altura de las tarjetas */
+  border: 1px solid black;
+  /* Borde de 1px de color negro */
+  box-sizing: border-box;
+  /* Incluye el borde en el tamaño total de la tarjeta */
+  display: flex;
+  /* Utilizamos flexbox para alinear contenido */
+  flex-direction: column;
+  /* Alineamos el contenido verticalmente */
+  justify-content: center;
+  align-items: center;
+  color: #00538c;
+  margin: 10px;
+}
+
+
+/* Estilos para el contenido dentro de las tarjetas */
+.tarjeta h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.tarjeta p {
+  margin-top: 25px;
+  font-size: 14px;
+  flex-grow: 1;
+  /* Hace que el párrafo ocupe todo el espacio disponible */
+  text-align: center;
+}
+
+
+/* Estilos para el cuadro */
+.cuadro {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+.cuadro h2 {
+  font-size: 24px;
+}
+
+/* Estilos para el contenido */
+.contenido {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+
+
+/* Estilos para la imagen */
+.contenido img {
+  width: 300px;
+  height: 350px;
+}
+
+.textoboton {
+  display: flex;
+  justify-content: space-between;
+}
+
+#titulo {
+  background-color: rgb(69, 70, 69);
+  /* width: 1206px; */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 auto; */
+  /* Centrar el contenedor en la página */
+}
+
+/* Estilos para el título */
+#titulo h2 {
+  margin: 0;
+  /* Eliminar el margen predeterminado del <h2> */
+  font-size: 35px;
+}
+.imagenlogo {
+  background: linear-gradient(to left, rgb(0, 37, 67), #050505);
+  border: 1px solid black; 
+  width: 500px;
+  /* height: 1048px; */
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.textodetalle {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer {
+  background-color: #333;
+}
+
+.lista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footertitulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media (max-width: 350px) {
+
+  .centrar {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+  }
+
+  .cursos {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .centrar {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+  }
+
+  .cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .tarjeta {
+    display: flex;
+
+  }
+
+  #titulo {
+    width: 550px;
+    justify-content: center;
+  }
+
+  .imagenlogo {
+    padding: 20px;
+    width: auto;
+    height: 50%;
+  }
+
+  .contenido {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cuadrodetalle {
+    width: 50%;
+    height: auto;
+  }
+
+}
+
+.titulofooter,
+.subtitulo {
+
+  color: white;
+
+}
+
+.footer-list-title {
+
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 0;
+  margin-left: 40px;
+  margin-left: 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  color: #ccc;
+
+}
