@@ -41,7 +41,7 @@ function mostrarTitulo(index) {
     <div class="textodetalle">
     <div class="textoboton"> 
       <h3>${seccion.nombre}</h3>
-      <a href="${seccion.link}" target="_blank">Más información</a>
+      <a href="${seccion.link}" target="_blank">More info..</a>
       </div>
       <p>${seccion.descripcion}</p>
     </div>
